@@ -1,48 +1,47 @@
-body, html{
-    font-family: 'Roboto', sans-serif;
+html, body{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
-#header{
-    background:url("https://www.wallpapertip.com/wmimgs/3-36195_dark-city-wallpaper-hd.jpg");   
-    color: rgb(0, 0, 0);
-    height: 100vh;
-    font-size: 3em;
-    background-position: center;
-    background-size: cover;
-    
-}
-#header a{
-    position: absolute;
-    top: 50%;
-    left: 38%;
-    right: auto;
-    color: black;
-}
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-a:hover{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    
-}
-a{
-    display: inline-block;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: static;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90vh;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
 }
   
-a::after {
-    content: '';
-    width: 0px;
-    height: 3px;
+  li {
+    float: left;
+
+  }
+  
+  li a {
     display: block;
-    background: rgb(255, 255, 255);
-    transition: 300ms;
-    top: -2px;
-}
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
   
-a:hover::after {
-    width: 100%;
-}
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: rgb(255, 45, 45);
+  }
