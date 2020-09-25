@@ -27,10 +27,12 @@ ul {
     -moz-border-radius: 15px 15px 15px 15px;
     -ms-border-radius: 15px 15px 15px 15px;
     -o-border-radius: 15px 15px 15px 15px;
+
 }
   
   li {
     float: left;
+
 
   }
   
@@ -40,7 +42,14 @@ ul {
     text-align: center;
     padding: 14px 19px;
     text-decoration: none;
-  }
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    -ms-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+    
+  
   
   li a:hover:not(.active) {
     background-color: #111;
