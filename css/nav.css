@@ -1,6 +1,8 @@
 :root{
     --main-color: rgb(255, 45, 45);
     --secondary-color: rgb(255, 111, 45);
+    --main-dark-color: #333;
+    --main-vdark-color: #111;
 }
 html, body{
     margin: 0;
@@ -13,15 +15,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: static;
-    left: 50%;
     display: flex;
-    justify-content: center;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     width: 330px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80vh;
+    margin-top: -10%;
     border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px 15px 15px 15px;
@@ -57,4 +53,10 @@ ul {
   
   .active {
     background: linear-gradient(135deg, var(--main-color),var(--secondary-color));
+  }
+
+  @media only screen and (max-width: 600px) {
+    ul{
+      margin-top: -20%;
+    }
   }

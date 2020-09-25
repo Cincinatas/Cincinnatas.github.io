@@ -3,12 +3,36 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cincinnatas</title>
+    <style>
+        body, html {
+            height: 100%;
+            position: relative;
+          }
+          
+          .bg {
+            /* The image used */
+            background-image: url("/img/night-sky-3840x2160-earth-sky-snow-stars-night-sea-mountain-cloud-425.jpg");
+          
+            /* Full height */
+            height: 100%;
+          
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        ul{
+            z-index: 5;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
+<div class="bg"></div>
 <ul>
   <li><a class="active" href="#">Home</a></li>
   <li><a href=#>News</a></li>
